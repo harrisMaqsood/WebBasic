@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crud App</title>
+</head>
+<body>
+    <div class="container">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label id="lblFullName">Full Name</label><br>
+                <input type="text" name="fullName" id="fullName" placeholder="Enter the name" required>  
+            </div>
+            <div>
+                <label id="lblAge">Age</label><br>
+                <input type="text" name="age" id="age" placeholder="Enter the age" required>
+            </div>
+            <div>
+                <label id="lblSalary">Salary</label><br>
+                <input type="text" name="salary" id="salary" placeholder="Enter the salary">
+            </div>
+            <div id="submit">
+                <input type="submit" value="Submit" id="submitButton">
+            </div>
+        </form>
+        <div>
+            <button id="update" onclick="updateTable()">Update</button>
+            <button id="delete" onclick="deleteRow()">Delete</button>
+        </div>
+    </div>
+    <div>
+        <table id="table">
+            <tr>
+                <th>Full Name</th>
+                <th>Age</th>
+                <th>Salary</th>
+            </tr>
+        </table>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    font-style: garamond;
+}
+#lblFullName,#lblAge,#lblSalary{
+    font-size: 2em;
+    margin-top: 20px;
+    color: rgb(100, 168, 190);
+}
+input{
+    font-size: 25px;
+    font-style: garamond;
+}
+#fullName,#age,#salary{
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+#table{
+    font-size: x-large;
+    color: rgb(0, 173, 231);
+    width: 70%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td{
+    text-align: center;
+    color: black;
+    border: 1px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    transition: 0.2s;
+}
+th{
+    border: 1px solid black;
+    text-align: center;
+}
+.container{
+    display: block;
+    height: 100vh;
+    width: 30%;
+    margin: 0%;
+    float: left;
+}
+#submitButton{
+    background-color:rgb(100, 168, 190);
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 20px 40px;
+    margin: 5% 27%;
+    outline: 0;
+    box-shadow: 7px 7px 11px 0px rgba(0,0,0,0.75);
+    transition: all 0.4s;
+}
+#submitButton:hover{
+    background-color:rgb(0, 181, 241);
+    transition: all 0.4s;
+} 
+#delete{
+    background-color: rgb(196, 40, 40);
+    padding: 25px 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    box-shadow: 7px 7px 11px 0px rgba(0,0,0,0.75);
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#update{
+    background-color: rgb(46, 202, 163);
+    box-shadow: 7px 7px 11px 0px rgba(0,0,0,0.75);
+    padding: 25px 50px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 1.3em;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+#update:hover{
+    background-color: rgb(38, 224, 178);
+    transition: all 0.3s;
+}
+#delete:hover{
+    background-color: rgb(226, 26, 26);
+    transition: all 0.3s;
+}
