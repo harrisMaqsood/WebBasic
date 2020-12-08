@@ -1,0 +1,1 @@
+Add fontawesome path too before opening
