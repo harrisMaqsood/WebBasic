@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="stylesheet" href="./fontawesome-free-5.13.1-web/css/all.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="dashboard">
+        <h1>Dashboard</h1>
+    </div>
+    <div class="studentRegistraiton">
+        <div class="icon"><i class="fas fa-id-card"></i></div>
+        <h3>Student Registration</h3>
+    </div>
+    <form action="" method="POST">
+        <div class="container">
+            <div class="information information-1">
+                <table>
+                    <tr>
+                        <td><label for="campus">Campus</label></td>
+                        <td><select name="campus" id="campus" required>
+                            <option value="Johar Town">Johar Town</option>
+                            <option value="Quaid e Azam">Quaid e Azam</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="registrationDate">Registration Date <span class="required">*</span> </label></td>
+                        <td><input type="date" name="registrationDate" id="registrationDate" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="registrationID">Registration ID <span class="required">*</span> </label></td>
+                        <td><input type="number" name="registrationDID" id="registrationID" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="firstName">First Name <span class="required">*</span> </label></td>
+                        <td><input type="text" name="firstName" id="firstName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="middleName">Middle Name <span class="required">*</span> </label></td>
+                        <td><input type="text" name="middleName" id="middleName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">Last Name <span class="required">*</span> </label></td>
+                        <td><input type="text" name="lastName" id="lastName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fatherName">Father Name <span class="required">*</span> </label></td>
+                        <td><input type="text" name="fatherName" id="fatherName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth <span class="required">*</span> </label></td>
+                        <td><input type="date" name="dob" id="dob" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pob">Place of Birth</label></td>
+                        <td><input type="text" name="lastName" id="lastName"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address <span class="required">*</span> </label></td>
+                        <td><textarea name="address" id="address" cols="30" rows="5" required></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td colspan="2">
+                            <input type="checkbox" name="admitted" id="admitted" value="Admitted">Admitted
+                            <input type="checkbox" name="active" id="active" value="Active">Active
+                            <input type="checkbox" name="" id="" value="Transfer">Transfer
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="information information-2">
+                <table>
+                    <tr>   
+                        <td><label for="residenceNumber">Residence Number <span class="required">*</span> </label></td>
+                        <td><input type="text" name="residenceNumber" id="residenceNumber" required></td>
+                    </tr>
+                    <tr>   
+                        <td><label for="mobileNumber">Mobile Number <span class="required">*</span> </label></td>
+                        <td><input type="text" name="mobileNumber" id="mobileNumber" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="emergencyNo">Emergency No</label></td>
+                        <td><input type="text" name="" id="emergencyNo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email <span class="required">*</span></label></td>
+                        <td><input type="email" name="eamil" id="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="previousSchool">Previous School </label></td>
+                        <td><input type="text" name="previousSchool" id="previousSchool"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="nationality">Nationality</label></td>
+                        <td><select name="Nationality" id="Nationality">
+                            <option value="Pakistani">Pakistani</option>
+                            <option value="other">Other</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="religion">Religion </label></td>
+                        <td><select name="religion" id="religion">
+                            <option value="Islam">Islam</option>
+                            <option value="Christisanity">Christisanity</option>
+                            <option value="Hinduism">Hinduism</option>
+                            <option value="Judaism">Judaism</option>
+                            <option value="other">other</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender <span class="required">*</span></label></td>
+                        <td><select name="gender" id="gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="session">Admission in Session <span class="required">*</span></label></td>
+                        <td><select name="session" id="session" required>
+                            <option value="2014-2015">2014-2015</option>
+                            <option value="2019-2020">2019-2020</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td><label for="grade">Admission in Class <span class="required">*</span></label></td>
+                        <td><select name="grade" id="grade" required>
+                            <option value="KG-1">KG-1</option>
+                            <option value="KG-2">KG-2</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>
+
+                        </td>
+                        <td>
+                            <button type="submit" id="save" onclick="saveStudent()">Save</button>
+                            <button type="reset">Reset</button>
+                            <button type="button">Registration Receipt</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="calendar">
+            <div class="calendar-icon">
+                <i class="fa fa-calendar" aria-hidden="true" id="calendor-icon"></i>
+            </div>
+            <div class="date-time">
+                <p id="date"></p>
+                <p id='time'></p>
+            </div>
+            
+        </div>
+    </form>
+    <script src="javascript.js"></script>
+</body>
+</html>
